@@ -1,0 +1,13 @@
+node_modules/
+build/
+dist/
+coverage/
+.DS_Store
+example/
+*.log
+.env*
+!.env.example
+.claude
+.opencode
+.skill
+.agent

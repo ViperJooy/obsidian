@@ -1,0 +1,164 @@
+@import "tailwindcss";
+@import "./material-symbols.css";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-headline: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  
+  /* Video Streaming/OTT Color System - Dark Mode (Default) */
+  --color-background: #000000;
+  --color-surface: #0C0C0D;
+  --color-surface-container: #181818;
+  --color-surface-container-high: #20201F;
+  --color-surface-elevated: #1B1B30;
+  --color-surface-variant: #262626;
+  
+  /* Accent Colors */
+  --color-accent-primary: var(--accent-primary, #E11D48);
+  --color-accent-secondary: #4338CA;
+  --color-accent-amber: #CA8A04;
+  --color-accent-gold: var(--color-accent-amber);
+  --color-accent-green: #22C55E;
+  --color-accent-purple: #BB9EFF;
+  --color-accent-purple-dim: #874CFF;
+  
+  /* Material Design 3 Colors (for login page compatibility) */
+  --color-primary: #BB9EFF;
+  --color-primary-dim: #874CFF;
+  --color-primary-fixed-dim: #A37BFF;
+  --color-secondary: #FDC003;
+  --color-on-surface: #FFFFFF;
+  --color-on-surface-variant: #ADAAAA;
+  --color-outline: #767575;
+  --color-outline-variant: #484847;
+  
+  /* Text Colors */
+  --color-text-primary: #F8FAFC;
+  --color-text-secondary: rgba(248, 250, 252, 0.7);
+  --color-text-tertiary: #94A3B8;
+  
+  /* Border */
+  --color-border: #312E81;
+  --color-border-subtle: rgba(255, 255, 255, 0.08);
+  
+  /* Destructive */
+  --color-destructive: #EF4444;
+
+  --radius-card: 12px;
+  --radius-button: 8px;
+  --radius-lg: 16px;
+}
+
+:root {
+  --accent-primary: #E11D48;
+}
+
+/* Light Mode Colors */
+.light {
+  --color-background: #FAFBFC;
+  --color-surface: #F5F7FA;
+  --color-surface-container: #EBEEF2;
+  --color-surface-container-high: #DFE3E8;
+  --color-surface-elevated: #FFFFFF;
+  --color-surface-variant: #F0F2F5;
+
+  --color-primary: #7C3AED;
+  --color-primary-dim: #A855F7;
+  --color-primary-fixed-dim: #8B5CF6;
+  --color-on-surface: #1A202C;
+  --color-on-surface-variant: #4A5568;
+  --color-outline: #718096;
+  --color-outline-variant: #CBD5E0;
+
+  --color-text-primary: #1A202C;
+  --color-text-secondary: rgba(26, 32, 44, 0.75);
+  --color-text-tertiary: #4A5568;
+
+  --color-border: #E2E8F0;
+  --color-border-subtle: rgba(0, 0, 0, 0.06);
+}
+
+@layer base {
+  body {
+    @apply bg-background text-text-primary font-sans antialiased;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-outline-variant);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-outline);
+}
+
+/* Glassmorphism */
+.glass {
+  @apply bg-surface-container/50 backdrop-blur-xl border border-border-subtle;
+}
+
+.glass-dark {
+  @apply bg-surface/60 backdrop-blur-2xl border border-border-subtle;
+}
+
+.glass-effect {
+  backdrop-filter: blur(20px);
+  background: color-mix(in srgb, var(--color-surface-container) 40%, transparent);
+}
+
+/* Hide Scrollbar */
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Hero Gradient */
+.hero-gradient {
+  background: linear-gradient(to top, var(--color-background) 0%, transparent 100%);
+}
+
+/* Glow Effects */
+.glow-primary {
+  box-shadow: 0 0 40px -10px rgba(225, 29, 72, 0.4);
+}
+
+.glow-accent {
+  box-shadow: 0 0 30px -8px rgba(67, 56, 202, 0.4);
+}
+
+/* Shimmer Effect for Loading */
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+.shimmer {
+  background: linear-gradient(90deg, var(--color-surface-container) 25%, var(--color-surface-container-high) 50%, var(--color-surface-container) 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+}
+
+/* Focus Ring */
+.focus-ring {
+  @apply focus:outline-none focus:ring-2 focus:ring-accent-primary focus:ring-offset-2 focus:ring-offset-background;
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

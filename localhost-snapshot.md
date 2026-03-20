@@ -1,0 +1,40 @@
+- generic [ref=e3]:
+  - generic [ref=e4]:
+    - generic [ref=e5]: 私
+    - heading "私人影院" [level=1] [ref=e6]
+    - paragraph [ref=e7]: 请登录您的 Emby 服务器以继续
+  - button "立即登录" [ref=e8]
+  - generic [ref=e11]:
+    - generic [ref=e12]:
+      - generic [ref=e13]:
+        - img [ref=e15]
+        - heading "Curator" [level=1] [ref=e17]
+      - paragraph [ref=e18]: Obsidian Violet Experience
+    - generic [ref=e19]:
+      - banner [ref=e20]:
+        - heading "Welcome Back" [level=2] [ref=e21]
+        - paragraph [ref=e22]: Sign in to continue your curated journey.
+      - generic [ref=e23]:
+        - generic [ref=e24]:
+          - generic [ref=e25]: Server URL
+          - generic [ref=e26]:
+            - img [ref=e27]
+            - textbox "https://emby.example.com" [ref=e30]
+        - generic [ref=e31]:
+          - generic [ref=e32]: Username
+          - generic [ref=e33]:
+            - img [ref=e34]
+            - textbox "username" [ref=e36]
+        - generic [ref=e37]:
+          - generic [ref=e38]:
+            - generic [ref=e39]: Password
+            - link "Forgot?" [ref=e40] [cursor=pointer]:
+              - /url: "#"
+          - generic [ref=e41]:
+            - img [ref=e42]
+            - textbox "••••••••" [ref=e45]
+            - button [ref=e46]:
+              - img [ref=e47]
+        - button "Sign In" [ref=e51]:
+          - text: Sign In
+          - img [ref=e52]
