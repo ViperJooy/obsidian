@@ -16,7 +16,6 @@ import ItemDetailsPage from './pages/ItemDetailsPage';
 import SettingsPage from './pages/SettingsPage';
 import LibraryPage from './pages/LibraryPage';
 import Login from './components/Login';
-import AIAgent from './components/AIAgent';
 import { emby } from './services/emby';
 import { motion, AnimatePresence } from 'motion/react';
 import { ThemeProvider, useTheme } from './context/ThemeContext';
@@ -138,8 +137,6 @@ function MainApp() {
       {/* Background Decorative Glows */}
       <div className="fixed top-0 right-0 w-[800px] h-[800px] bg-accent-primary/5 blur-[120px] rounded-full -z-10 translate-x-1/2 -translate-y-1/2 pointer-events-none" />
       <div className="fixed bottom-0 left-0 w-[600px] h-[600px] bg-accent-gold/5 blur-[100px] rounded-full -z-10 -translate-x-1/2 translate-y-1/2 pointer-events-none" />
-      
-      {!isWatchPage && <AIAgent />}
     </div>
   );
 }

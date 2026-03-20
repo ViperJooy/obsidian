@@ -65,48 +65,6 @@ const resources = {
         "select_season": "Select a season to view episodes",
         "no_seasons": "No season information available"
       },
-      "ai": {
-      "agent": "AI Assistant",
-      "model": "Model",
-      "save_config": "Save Config",
-      "clear": "Clear",
-      "need_config": "Please configure AI model first",
-      "config_btn": "Configure Model",
-      "placeholder": "e.g. Click login, enter admin...",
-      "executing": "Executing...",
-      "execute": "Execute",
-      "hint": "Enter natural language instructions to operate the UI"
-},
-      "modal": {
-      "cancel": "Cancel",
-      "confirm_logout": "Confirm Logout",
-      "logout_msg": "You need to log in again to continue.",
-      "switch_account": "Switch Account",
-      "switch_msg": "Switching account will log you out of current session."
-},
-      "topbar": {
-      "theme_mode": "Theme Mode",
-      "settings": "Settings",
-      "switch_account": "Switch Account",
-      "logout": "Logout",
-      "language": "Language"
-},
-      "sort": {
-      "name": "Name",
-      "date_added": "Date Added",
-      "year": "Year",
-      "rating": "Rating",
-      "premiere_date": "Premiere Date",
-      "asc": "Ascending",
-      "desc": "Descending",
-      "filter": "Filter"
-},
-      "library": {
-      "movies": "Movies",
-      "series": "TV Shows",
-      "movies_desc": "Browse your movie collection",
-      "series_desc": "Your favorite TV shows"
-},
       "search": {
       "title": "Search",
       "desc": "Explore your library",
@@ -228,48 +186,6 @@ const resources = {
         "select_season": "选择季数查看剧集",
         "no_seasons": "暂无季数信息"
       },
-      "ai": {
-      "agent": "AI 助手",
-      "model": "模型",
-      "save_config": "保存配置",
-      "clear": "清除",
-      "need_config": "请先配置 AI 模型以启用智能助手",
-      "config_btn": "配置模型",
-      "placeholder": "例如：点击登录按钮、填写用户名为 admin...",
-      "executing": "执行中...",
-      "execute": "执行",
-      "hint": "输入自然语言指令，AI 将帮您操作界面"
-},
-      "modal": {
-      "cancel": "取消",
-      "confirm_logout": "确认退出",
-      "logout_msg": "退出后需要重新登录才能继续使用",
-      "switch_account": "切换账号",
-      "switch_msg": "切换账号将退出当前登录状态"
-},
-      "topbar": {
-      "theme_mode": "主题模式",
-      "settings": "设置",
-      "switch_account": "切换账号",
-      "logout": "退出登录",
-      "language": "语言"
-},
-      "sort": {
-      "name": "名称",
-      "date_added": "添加日期",
-      "year": "年份",
-      "rating": "评分",
-      "premiere_date": "上映日期",
-      "asc": "升序",
-      "desc": "降序",
-      "filter": "筛选"
-},
-      "library": {
-      "movies": "电影",
-      "series": "电视剧",
-      "movies_desc": "浏览您的电影收藏",
-      "series_desc": "您喜爱的剧集"
-},
       "search": {
       "title": "搜索",
       "desc": "探索您的媒体库",
